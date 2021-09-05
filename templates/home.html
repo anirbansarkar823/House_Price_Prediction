@@ -1,0 +1,97 @@
+<html>
+<head>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+   
+
+<body>
+    <title>House Price Prediction</title>
+	<div class="container">
+		<div class="row">
+		  <form action="{{ url_for('predict')}}"method="post">
+		  	<div class="col-sm-9">
+
+			<div class="form-group  purple-border">
+				  <label for="comment">CRIM:</label>
+				  <textarea class="form-control" rows="2" id="query1" name="CRIM" rows="2" cols="5" autofocus>{{query1}}</textarea>
+			</div>
+
+			<div class="form-group  purple-border">
+				  <label for="comment">ZN:</label>
+				  <textarea class="form-control" rows="2" id="query2" name="ZN" rows="2" cols="5" autofocus>{{query2}}</textarea>
+			</div>
+
+			<div class="form-group  purple-border">
+				  <label for="comment">INDUS:</label>
+				  <textarea class="form-control" rows="2" id="query3" name="INDUS" rows="2" cols="5" autofocus>{{query3}}</textarea>
+			</div>
+
+			<div class="form-group  purple-border">
+				  <label for="comment">CHAS:</label>
+				  <textarea class="form-control" rows="2" id="query4" name="CHAS" rows="2" cols="5" autofocus>{{query4}}</textarea>
+			</div>
+
+			<div class="form-group  purple-border">
+				  <label for="comment">NOX:</label>
+				  <textarea class="form-control" rows="2" id="query5" name="NOX" rows="2" cols="5" autofocus>{{query5}}</textarea>
+			</div>
+
+            <div class="form-group  purple-border">
+                <label for="comment">RM:</label>
+                <textarea class="form-control" rows="2" id="query5" name="RM" rows="2" cols="5" autofocus>{{query5}}</textarea>
+          </div>
+
+          <div class="form-group  purple-border">
+            <label for="comment">AGE:</label>
+            <textarea class="form-control" rows="2" id="query5" name="AGE" rows="2" cols="5" autofocus>{{query5}}</textarea>
+            </div>
+
+            <div class="form-group  purple-border">
+                <label for="comment">DIS:</label>
+                <textarea class="form-control" rows="2" id="query5" name="DIS" rows="2" cols="5" autofocus>{{query5}}</textarea>
+          </div>
+
+          <div class="form-group  purple-border">
+            <label for="comment">RAD:</label>
+            <textarea class="form-control" rows="2" id="query5" name="RAD" rows="2" cols="5" autofocus>{{query5}}</textarea>
+        </div>
+
+        <div class="form-group  purple-border">
+            <label for="comment">TAX:</label>
+            <textarea class="form-control" rows="2" id="query5" name="TAX" rows="2" cols="5" autofocus>{{query5}}</textarea>
+            </div>
+
+        <div class="form-group  purple-border">
+            <label for="comment">PTRATIO:</label>
+            <textarea class="form-control" rows="2" id="query5" name="PTRATIO" rows="2" cols="5" autofocus>{{query5}}</textarea>
+        </div>
+
+        <div class="form-group  purple-border">
+            <label for="comment">B:</label>
+            <textarea class="form-control" rows="2" id="query5" name="B" rows="2" cols="5" autofocus>{{query5}}</textarea>
+        </div>
+
+        <div class="form-group  purple-border">
+            <label for="comment">LSTAT:</label>
+            <textarea class="form-control" rows="2" id="query5" name="LSTAT" rows="2" cols="5" autofocus>{{query5}}</textarea>
+        </div>
+
+			</div>
+			<div class="col-sm-3">
+			<button type="submit" class="btn btn-primary" name="submit">SUBMIT</button>
+			</div>
+		  </form>
+		  </div>
+		  
+		<div class="row"> 
+			<div class="col-sm-9">
+			<textarea class="form-control" rows="2" id="comment" name="query6" rows="2" cols="5" autofocus>{{output1}}</textarea>
+			<!-- <textarea class="form-control" rows="2" id="comment" name="query7" rows="2" cols="5" autofocus>{{output2}}</textarea> -->
+			</div>
+		</div>
+	</div>		
+   </body>
+</html>
