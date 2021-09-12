@@ -55,7 +55,7 @@ def predict():
         prediction = model.predict(new_df)
         output=round(prediction[0],2)
 
-        return render_template('home.html', output1=output, CRIM=request.form['CRIM'], ZN=request.form['ZN'], INDUS=request.form['INDUS'], CHAS=request.form['CHAS'], NOX=request.form['NOX'], RM=request.form['RM'], AGE=request.form['AGE'], DIS=request.form['DIS'], RAD=request.form['RAD'], TAX=request.form['TAX'], PTRATIO=request.form['PTRATIO'], B=request.form['B'], LSTAT=request.form['LSTAT'])
+        return render_template('home.html', output1=output)
 
     else:
         return render_template('home.html')
